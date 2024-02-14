@@ -1,0 +1,2 @@
+**:warning: Most of the code in this section is directly copied from [guihuzhang/FactSpotter](https://github.com/guihuzhang/FactSpotter).**
+See their repo or [their paper](https://hal.science/hal-04257838) for full explanation on the training of the models used.

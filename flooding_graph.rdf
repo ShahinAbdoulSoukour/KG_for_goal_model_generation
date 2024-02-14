@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:ex="http://www.semanticweb.org/Flooding#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="http://www.semanticweb.org/Flooding#Emergency_Radio_Broadcasts">
+    <rdfs:label>Emergency radio broadcasts</rdfs:label>
+    <rdf:type rdf:resource="http://www.semanticweb.org/Flooding#Communication_Channels"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/Flooding#Dedicated_Smartphone_App">
+    <rdfs:label>Dedicated smartphone app</rdfs:label>
+    <rdf:type rdf:resource="http://www.semanticweb.org/Flooding#Communication_Channels"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/Flooding#Sirens">
+    <rdfs:label>Sirens</rdfs:label>
+    <rdf:type rdf:resource="http://www.semanticweb.org/Flooding#Communication_Channels"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/Flooding#Uses">
+    <rdfs:label>Uses</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/Flooding#Measure">
+    <rdfs:label>Measure</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/Flooding#River_Overflow">
+    <rdfs:label>River overflow</rdfs:label>
+    <ex:Causes rdf:resource="http://www.semanticweb.org/Flooding#Flood"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/Flooding#Bridge_Damage">
+    <rdfs:label>Bridge damage</rdfs:label>
+    <rdf:type rdf:resource="http://www.semanticweb.org/Flooding#Property_Damage"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/Flooding#Sensors">
+    <rdfs:label>Sensors</rdfs:label>
+    <ex:Measure rdf:resource="http://www.semanticweb.org/Flooding#Soil_Moisture"/>
+    <ex:Measure rdf:resource="http://www.semanticweb.org/Flooding#Heavy_Rainfall"/>
+    <ex:Measure rdf:resource="http://www.semanticweb.org/Flooding#Water_Level"/>
+    <ex:Measure rdf:resource="http://www.semanticweb.org/Flooding#Streamflow"/>
+    <ex:Generate rdf:resource="http://www.semanticweb.org/Flooding#Data"/>
+    <ex:Detect rdf:resource="http://www.semanticweb.org/Flooding#Flood"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/Flooding#Earthquake">
+    <rdfs:label>Earthquake</rdfs:label>
+    <ex:Causes rdf:resource="http://www.semanticweb.org/Flooding#Tsunami"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/Flooding#Dam_Failure">
+    <rdfs:label>Dam failure</rdfs:label>
+    <ex:Causes rdf:resource="http://www.semanticweb.org/Flooding#Flood"/>
+    <ex:Due_To rdf:resource="http://www.semanticweb.org/Flooding#Inadequate_Maintenance"/>
+    <ex:Due_To rdf:resource="http://www.semanticweb.org/Flooding#Overtopping"/>
+    <ex:Due_To rdf:resource="http://www.semanticweb.org/Flooding#Material_Defects"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/Flooding#Remote_Cameras">
+    <rdfs:label>Remote cameras</rdfs:label>
+    <rdf:type rdf:resource="http://www.semanticweb.org/Flooding#Cameras"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/Flooding#Data">
+    <rdfs:label>Data</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/Flooding#Water_Level">
+    <rdfs:label>Water level</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/Flooding#Predicts">
+    <rdfs:label>Predicts</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/Flooding#Emergencies_Response_Agencies">
+    <rdfs:label>Emergencies response agencies</rdfs:label>
+    <rdf:type rdf:resource="http://www.semanticweb.org/Flooding#General_Public"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/Flooding#Dam">
+    <rdfs:label>Dam</rdfs:label>
+    <ex:Provides rdf:resource="http://www.semanticweb.org/Flooding#Flood_Control"/>
+    <ex:Provides rdf:resource="http://www.semanticweb.org/Flooding#Irrigation"/>
+    <ex:Fails rdf:resource="http://www.semanticweb.org/Flooding#Dam_Failure"/>
+    <ex:Avoids rdf:resource="http://www.semanticweb.org/Flooding#Flood"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/Flooding#Flood">
+    <rdfs:label>Flood</rdfs:label>
+    <ex:Causes rdf:resource="http://www.semanticweb.org/Flooding#Property_Damage"/>
+    <ex:Causes rdf:resource="http://www.semanticweb.org/Flooding#Environmental_Damage"/>
+    <ex:Causes rdf:resource="http://www.semanticweb.org/Flooding#Evacuation_Of_Residents"/>
+    <ex:Causes rdf:resource="http://www.semanticweb.org/Flooding#Loss_Of_Life"/>
+    <ex:Causes rdf:resource="http://www.semanticweb.org/Flooding#Health_And_Safety_Risks"/>
+    <ex:Causes rdf:resource="http://www.semanticweb.org/Flooding#Traffic_Disruption"/>
+    <ex:Causes rdf:resource="http://www.semanticweb.org/Flooding#Business_Disruption"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/Flooding#Weather_Forecasting_System">
+    <rdfs:label>Weather forecasting system</rdfs:label>
+    <rdf:type rdf:resource="http://www.semanticweb.org/Flooding#Weather_Prediction"/>
+    <ex:Generates rdf:resource="http://www.semanticweb.org/Flooding#Forecasting"/>
+    <ex:Analyzes rdf:resource="http://www.semanticweb.org/Flooding#Data"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/Flooding#Environmental_Damage">
+    <rdfs:label>Environmental damage</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/Flooding#General_Public">
+    <rdfs:label>General public</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/Flooding#Flood_Warning_System">
+    <rdfs:label>Flood warning system</rdfs:label>
+    <ex:Predicts rdf:resource="http://www.semanticweb.org/Flooding#Flood"/>
+    <ex:Analyzes rdf:resource="http://www.semanticweb.org/Flooding#Forecasting"/>
+    <ex:Recommends rdf:resource="http://www.semanticweb.org/Flooding#Evacuation_Of_Residents"/>
+    <ex:Generates rdf:resource="http://www.semanticweb.org/Flooding#Alerts"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/Flooding#Social_Media_Notification">
+    <rdfs:label>Social media notification</rdfs:label>
+    <rdf:type rdf:resource="http://www.semanticweb.org/Flooding#Communication_Channels"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/Flooding#Forecasting">
+    <rdfs:label>Forecasting</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/Flooding#Vehicles_Damage">
+    <rdfs:label>Vehicles damage</rdfs:label>
+    <rdf:type rdf:resource="http://www.semanticweb.org/Flooding#Property_Damage"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/Flooding#Cameras">
+    <rdfs:label>Cameras</rdfs:label>
+    <ex:Generate rdf:resource="http://www.semanticweb.org/Flooding#Data"/>
+    <ex:Detect rdf:resource="http://www.semanticweb.org/Flooding#Flood"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/Flooding#Weather_Prediction">
+    <rdfs:label>Weather prediction</rdfs:label>
+    <ex:Anticipates rdf:resource="http://www.semanticweb.org/Flooding#Heavy_Rainfall"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/Flooding#Consumer_Cameras">
+    <rdfs:label>Consumer cameras</rdfs:label>
+    <rdf:type rdf:resource="http://www.semanticweb.org/Flooding#Cameras"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/Flooding#Mobile_Phone_Messages">
+    <rdfs:label>Mobile phone messages</rdfs:label>
+    <rdf:type rdf:resource="http://www.semanticweb.org/Flooding#Communication_Channels"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/Flooding#Alerts">
+    <rdfs:label>Alerts</rdfs:label>
+    <ex:Notify rdf:resource="http://www.semanticweb.org/Flooding#General_Public"/>
+    <ex:IssuedTo rdf:resource="http://www.semanticweb.org/Flooding#Communication_Channels"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/Flooding#Government_Authorities">
+    <rdfs:label>Government authorities</rdfs:label>
+    <rdf:type rdf:resource="http://www.semanticweb.org/Flooding#General_Public"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/Flooding#Television_Announcements">
+    <rdfs:label>Television announcements</rdfs:label>
+    <rdf:type rdf:resource="http://www.semanticweb.org/Flooding#Communication_Channels"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/Flooding#Homes_Damage">
+    <rdfs:label>Homes damage</rdfs:label>
+    <rdf:type rdf:resource="http://www.semanticweb.org/Flooding#Property_Damage"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/Flooding#Irrigation">
+    <rdfs:label>Irrigation</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/Flooding#Flood_Control">
+    <rdfs:label>Flood control</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/Flooding#Recommends">
+    <rdfs:label>Recommends</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/Flooding#Siphoning">
+    <rdfs:label>Siphoning</rdfs:label>
+    <ex:Causes rdf:resource="http://www.semanticweb.org/Flooding#Flood"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/Flooding#Generate">
+    <rdfs:label>Generate</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/Flooding#Railroads_Damage">
+    <rdfs:label>Railroads damage</rdfs:label>
+    <rdf:type rdf:resource="http://www.semanticweb.org/Flooding#Property_Damage"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/Flooding#Loss_Of_Life">
+    <rdfs:label>Loss of life</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/Flooding#Avoids">
+    <rdfs:label>Avoids</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/Flooding#Heavy_Rainfall">
+    <rdfs:label>Heavy rainfall</rdfs:label>
+    <ex:Causes rdf:resource="http://www.semanticweb.org/Flooding#Flood"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/Flooding#Detect">
+    <rdfs:label>Detect</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/Flooding#Soil_Moisture">
+    <rdfs:label>Soil moisture</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/Flooding#Business_Disruption">
+    <rdfs:label>Business disruption</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/Flooding#Buildings_Damage">
+    <rdfs:label>Buildings damage</rdfs:label>
+    <rdf:type rdf:resource="http://www.semanticweb.org/Flooding#Property_Damage"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/Flooding#Material_Defects">
+    <rdfs:label>Material defects</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/Flooding#Notify">
+    <rdfs:label>Notify</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/Flooding#Analyzes">
+    <rdfs:label>Analyzes</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/Flooding#Tsunami">
+    <rdfs:label>Tsunami</rdfs:label>
+    <ex:Causes rdf:resource="http://www.semanticweb.org/Flooding#Flood"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/Flooding#Anticipates">
+    <rdfs:label>Anticipates</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/Flooding#Streamflow">
+    <rdfs:label>Streamflow</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/Flooding#Property_Damage">
+    <rdfs:label>Property damage</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/Flooding#Due_To">
+    <rdfs:label>Due to</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/Flooding#People">
+    <rdfs:label>People</rdfs:label>
+    <rdf:type rdf:resource="http://www.semanticweb.org/Flooding#General_Public"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/Flooding#Fails">
+    <rdfs:label>Fails</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/Flooding#Overtopping">
+    <rdfs:label>Overtopping</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/Flooding#Generates">
+    <rdfs:label>Generates</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/Flooding#Causes">
+    <rdfs:label>Causes</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/Flooding#IssuedTo">
+    <rdfs:label>Issued to</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/Flooding#Traffic_Disruption">
+    <rdfs:label>Traffic disruption</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/Flooding#Inadequate_Maintenance">
+    <rdfs:label>Inadequate maintenance</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/Flooding#Provides">
+    <rdfs:label>Provides</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/Flooding#Communication_Channels">
+    <rdfs:label>Communication channels</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/Flooding#Evacuation_Of_Residents">
+    <rdfs:label>Evacuation of residents</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/Flooding#Health_And_Safety_Risks">
+    <rdfs:label>Health and safety risks</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">
+    <rdfs:label>is a type of</rdfs:label>
+  </rdf:Description>
+</rdf:RDF>

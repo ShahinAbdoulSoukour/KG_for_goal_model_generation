@@ -1,0 +1,1 @@
+from .extractor import anchor_points_extractor
