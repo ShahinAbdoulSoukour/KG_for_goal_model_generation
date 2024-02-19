@@ -73,7 +73,7 @@ def graph_explorator(df, goal, graph, tokenizer_nli, model_nli):
                             concatenated_triples_df = pd.DataFrame(concatenated_triples_dict)
 
                             # --> test the entailment
-                            entailment_concatenate_triples_result = test_entailment(concatenated_triples_df)
+                            entailment_concatenate_triples_result = test_entailment(concatenated_triples_df, tokenizer_nli, model_nli)
 
                             # update the previous score
                             entailment_score = current_score
