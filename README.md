@@ -1,4 +1,4 @@
-# Knowledge Graphs for goals models generation
+# Knowledge Graphs for goal model generation
 
 We provide the code used to produce the analyses of our paper: *Leveraging knowledge graphs for goal model generation*. The code can be run in a dedicated Jupyter Notebook:
 
