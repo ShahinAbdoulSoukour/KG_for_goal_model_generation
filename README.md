@@ -1,3 +1,5 @@
+[![python](https://img.shields.io/badge/python-3.9%20|%203.10%20|%203.11-blue.svg?style=flat&logo=python&logoColor=white)](https://www.python.org)
+
 # Knowledge Graphs for goal model generation
 
 We provide the code used to produce the analyses of our paper: *Leveraging knowledge graphs for goal model generation*. The code can be run in a dedicated Jupyter Notebook:
@@ -14,8 +16,9 @@ pip install -r requirements.txt
 jupyter notebook approach_demo.ipynb
 ```
 
-## Citation   
-```
+## Citation
+
+```bibtex
 @inproceedings{abdoulsoukour:hal-04486653,
   TITLE = {{Leveraging Knowledge Graphs for Goal Model Generation}},
   AUTHOR = {Abdoul Soukour, Shahin and Aboucaya, William and Georgantas, Nikolaos},
