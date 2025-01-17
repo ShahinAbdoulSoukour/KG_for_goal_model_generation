@@ -78,6 +78,14 @@ def graph_explorator(df, goal, graph, tokenizer_nli, model_nli):
                             # update the previous score
                             entailment_score = current_score
 
+                            if any(entailment_concatenate_triples_result['NLI_LABEL'] == 'ENTAILMENT'):
+                                entailment_concatenate_triples_result = entailment_concatenate_triples_result.loc[
+                                    entailment_concatenate_triples_result['NLI_LABEL'] == 'ENTAILMENT'][['PREMISE', 'PREMISE_SERIALIZED', 'ENTAILMENT', 'NLI_LABEL']]
+                                entailment_concatenate_triples_result.rename(columns={'PREMISE': 'SUBGOALS', 'PREMISE_SERIALIZED': 'SUBGOALS_SERIALIZED', 'ENTAILMENT': 'SCORE'}, inplace=True)
+                                # update the dataframe
+                                entailed_triples_df = pd.concat([entailed_triples_df, entailment_concatenate_triples_result])
+                                break
+                            
                         else:
                             break
                     else:
